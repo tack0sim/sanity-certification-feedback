@@ -1,8 +1,8 @@
 import { type SanityConfig } from '@sanity/sdk';
 import { SanityApp } from '@sanity/sdk-react';
 import { Flex, Spinner } from '@sanity/ui';
-import { ExampleComponent } from './ExampleComponent';
 import { SanityUI } from './SanityUI';
+import { Feedback } from './Feedback';
 
 function App() {
   // apps can access many different projects or other sources of data
@@ -25,7 +25,7 @@ function App() {
     <SanityUI>
       <SanityApp config={sanityConfigs} fallback={<Loading />}>
         {/* add your own components here! */}
-        <ExampleComponent />
+        <Feedback />
       </SanityApp>
     </SanityUI>
   );
