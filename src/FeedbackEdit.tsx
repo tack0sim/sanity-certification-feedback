@@ -2,6 +2,8 @@ import { DocumentHandle, useDocument } from '@sanity/sdk-react';
 import { Card, Flex, Stack, Text, Container } from '@sanity/ui';
 
 import { StatusBadge } from './StatusBadge';
+import { Sentiment } from './Sentiment';
+import { Notes } from './Notes';
 
 type FeedbackEditProps = {
   selectedFeedback: DocumentHandle;
@@ -48,8 +50,8 @@ export function FeedbackEdit({ selectedFeedback }: FeedbackEditProps) {
               </Card>
             </Stack>
 
-            {/* In the next lessons... */}
-            {/* Sentiment, Notes, Assignee, Actions */}
+            <Sentiment value={sentiment} handle={selectedFeedback} />
+            <Notes value={notes} handle={selectedFeedback} />
           </Stack>
         </Card>
       </Card>
