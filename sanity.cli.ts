@@ -4,6 +4,8 @@ export default defineCliConfig({
   app: {
     organizationId: 'oG4Ppzmwr',
     entry: './src/App.tsx',
-    id: 'pa6w2fvxffneb4jajmseadlw',
+  },
+  deployment: {
+    appId: 'pa6w2fvxffneb4jajmseadlw',
   },
 });
