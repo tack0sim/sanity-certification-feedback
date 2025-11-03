@@ -53,7 +53,11 @@ export function FeedbackEdit({ selectedFeedback }: FeedbackEditProps) {
               </Card>
             </Stack>
 
-            <Sentiment value={sentiment} handle={selectedFeedback} />
+            <Sentiment
+              feedback={content}
+              value={sentiment}
+              handle={selectedFeedback}
+            />
             <Notes value={notes} handle={selectedFeedback} />
             <Assignee value={assignee} handle={selectedFeedback} />
 
